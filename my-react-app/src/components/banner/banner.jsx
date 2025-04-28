@@ -1,19 +1,15 @@
-import React from "react";
-import "./banner.scss";
+import React from "react"
+import "./banner.scss"
 
-function Banner() {
-    return(
-        <div className="header">
-            <div className="header__logo">
-                <img src="kasa.png" alt="logo de Kasa"></img>
-            </div>
-            <div className="header__links">
-                <button>Accueil</button>
-                <button>A propos</button>
-            </div>
-            
+function Banner({ title, picture, className }) {
+    return (
+      <div>
+        <div className={className}>
+          <img className="banner__img" src={picture} alt="" />
+          <h1 className="banner__title">{title}</h1>
         </div>
+      </div>
     )
-}
-
-export default Banner;
+  }
+  
+  export default Banner

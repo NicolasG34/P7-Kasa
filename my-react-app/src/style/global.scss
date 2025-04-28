@@ -1,48 +1,16 @@
 // Colors //
-$primary-color :     #FF6060;
-$secondary-color :   #C4C4C4;
-$background-color :  #F6F6F6;
+$primary-color : #FF6060;
+$secondary-color : #C4C4C4;
+$tertiary-color: #FFFFFF;
+$background-color : #F6F6F6;
 
-// Gradient //
-$gradient-to-black : linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
 
 //Breakpoints for responsive
 $breakpoints: (
     smartphone: 768px,
     tablet: 1024px,
 );
-
-/* Rounded Corner */
-@mixin rounded-corner-big{
-    border-radius: 25px;
-}
-
-@mixin rounded-corner-medium {
-    border-radius: 10px;
-}
-
-@mixin rounded-corner-small {
-    border-radius: 5px;
-}
-
-//Text Drop Shadow
-@mixin text-shadow{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-//Mediaqueries for responsive
-@mixin smartphone-responsive {
-    @media all and (max-width: map-get($breakpoints, smartphone)) {
-        @content;
-    }
-}
-
-@mixin tablet-responsive {
-    @media all and (min-width: map-get($breakpoints, smartphone)) and (max-width: map-get($breakpoints, tablet)) {
-        @content;
-    }
-}
-
 
 //Settle global base for typography
 * {
@@ -54,7 +22,8 @@ a {
     text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
     list-style-type: none;
 }
 
