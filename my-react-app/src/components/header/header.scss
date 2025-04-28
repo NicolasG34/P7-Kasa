@@ -1,0 +1,27 @@
+@import "../../style/global.scss";
+
+.header {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        width: 210px;
+        height: 68px;
+    }
+
+    &__link{
+        gap: 57px;
+        display: flex;
+        margin-left: 50px;
+
+    }
+}
+
+.nav-link,
+.nav-active {
+	margin-left: 50px;
+	color: black;
+	font-weight: 500;
+    font-size: 24px;
+}
