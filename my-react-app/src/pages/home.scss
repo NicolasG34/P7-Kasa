@@ -1,0 +1,18 @@
+@import '../style/global.scss';
+
+.appartmentRent {
+    width: 86%;
+    margin: auto;
+    background-color: $background-color;
+    padding: 60px 50px;
+    border-radius: 25px;
+
+    &__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+
+    }
+}
