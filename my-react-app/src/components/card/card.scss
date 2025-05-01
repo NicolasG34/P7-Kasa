@@ -8,6 +8,10 @@
     border-radius: 15px;
     overflow: hidden;
     transition: box-shadow 200ms ease-in-out;
+    @include smartphone-responsive {
+        width: 460px;
+        height: 386px;
+    }
  
     &:hover {
         &::before{
@@ -32,14 +36,21 @@
         object-fit: cover;
     }
     &__title{
-        position: absolute;
-        bottom: 0;
-        width:70%;
-        font-size: 18px;
-        line-height: 25px;
-        color: white;
-        padding: 5%;
-        margin: 0;
+    position: absolute;
+    bottom: 283px;
+    height: 30px;
+    width: 92%;
+    font-size: 19px;
+    color: white;
+    padding: 4%;
+    margin: 0px;
+    border-radius: 15px;
+    background-color:$primary-color;
+    text-align: center;
+    white-space: nowrap;
+    @include smartphone-responsive {
+       bottom:322px;
+    }
     }
     
 }

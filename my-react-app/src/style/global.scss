@@ -12,6 +12,20 @@ $breakpoints: (
     tablet: 1024px,
 );
 
+
+@mixin smartphone-responsive {
+    @media all and (max-width: map-get($breakpoints, smartphone)) {
+        @content;
+    }
+}
+
+
+@mixin tablet-responsive {
+    @media all and (min-width: map-get($breakpoints, smartphone)) and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
 //Settle global base for typography
 * {
     font-family: 'Montserrat', sans-serif;
@@ -32,10 +46,3 @@ li {
     text-decoration: underline;
 }
 
-
-//Font weight map
-$font-weight: (
-    light: 400,
-    regular: 500,
-    bold: 700,
-);

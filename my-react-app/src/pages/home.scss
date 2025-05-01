@@ -5,6 +5,9 @@
     background-color: $background-color;
     padding: 60px 50px;
     border-radius: 25px;
+    @include smartphone-responsive {
+       background-color: transparent;
+    }
 
     &__card {
     display: flex;
