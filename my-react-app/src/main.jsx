@@ -12,9 +12,9 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/404" element={<ErrorPage />} />
       <Route path="/aPropos" element={<About />} />
-      <Route path="/ficheLogement" element={<HouseInfo />} />
+      <Route path="/logement/:rentId" element={<HouseInfo />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
     </BrowserRouter>
 

@@ -1,11 +1,10 @@
-function HouseInfo() {
+import { useParams } from "react-router";
 
-    return (
-      <>
-  Fiche Logement
-      </>
-    )
-  }
+ function HouseInfo() {
+  let params = useParams();
+  // params.teamId
+  console.log(params.rentId);
+}
   
   export default HouseInfo
   

@@ -12,7 +12,7 @@ function HomePage() {
 
   return (
     <div>
-      <Header></Header>
+      <Header />
       <Banner
         picture={BannerImage}
         title="Chez vous, partout et ailleurs"
@@ -21,13 +21,11 @@ function HomePage() {
       <section className="appartmentRent">
         <div className="appartmentRent__card">
           {AppartmentData.map((appartmentCard) => (
-            <Link to={`/logement/${appartmentCard.id}`} key={appartmentCard.id}>
-              <Card picture={appartmentCard.cover} title={appartmentCard.title} />
-            </Link>
+              <Card rent={appartmentCard} key={appartmentCard.id}/>
           ))}
         </div>
       </section>
-      <Footer></Footer>
+      <Footer />
     </div>
   )
 }
