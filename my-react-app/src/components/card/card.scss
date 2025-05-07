@@ -36,18 +36,12 @@
         object-fit: cover;
     }
     &__title{
-    position: absolute;
-    bottom: 283px;
+        position: absolute;
+    bottom: 13px;
     height: 30px;
-    width: 92%;
-    font-size: 19px;
     color: white;
     padding: 4%;
-    margin: 0px;
-    border-radius: 15px;
-    background-color:$primary-color;
-    text-align: center;
-    white-space: nowrap;
+    font-size: 23px;
     @include smartphone-responsive {
        bottom:322px;
     }
