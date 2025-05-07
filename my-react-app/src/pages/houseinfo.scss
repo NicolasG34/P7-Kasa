@@ -1,14 +1,14 @@
 @import '../style/global.scss';
 
 .rental-page {
-    width: 86%;
     margin: auto;
+    margin-top: 40px;
 }
 
 .rental-info-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto;
+    margin: 25px 0 10px;
     @include smartphone-responsive {
         display: flex;
         flex-direction: column;
@@ -17,6 +17,7 @@
 }
 
 .rental-info {
+    margin-top: 20px;
     &__title {
         margin: 0;
         font-size: 36px;
@@ -27,6 +28,9 @@
     &__location {
         font-size: 18px;
         margin: 0;
+        color: black;
+        margin-bottom: 20px;
+        font-weight: 600;
         @include smartphone-responsive {
             font-size: 14px;
         }

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../tags/tags"
+import "../tags/tags.scss"
 import '../../style/global.scss'
 
 function Tags({ tag }) {

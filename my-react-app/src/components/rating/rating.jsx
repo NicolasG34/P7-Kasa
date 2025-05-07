@@ -1,7 +1,7 @@
 import React from 'react'
 import greyStar from '../../assets/grey_star.svg'
 import orangeStar from '../../assets/orange_star.svg'
-import "../rating/rating"
+import "../rating/rating.scss"
 import '../../style/global.scss'
 
 function Rating({ rating }) {

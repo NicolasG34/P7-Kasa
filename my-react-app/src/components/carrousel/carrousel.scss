@@ -35,7 +35,7 @@
         height: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 1%;
+        margin-top: 50px;
             &__photocount {
                 position: absolute;
                 color: white;
@@ -52,4 +52,8 @@
                 background-color: transparent;
             }
         }
+}
+
+.arrow--backward{
+    transform: rotate(180deg);
 }
