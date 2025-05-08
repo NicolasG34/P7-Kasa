@@ -7,9 +7,6 @@
     align-items: center;
     background-color: #000000;
     margin: 50px -100px -50px -100px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
     @include smartphone-responsive {
         margin: 50px -30px 0 -30px;
     }

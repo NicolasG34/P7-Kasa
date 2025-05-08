@@ -1,11 +1,12 @@
 @import '../style/global.scss';
 
-.rental-page {
+.HouseInfoPage {
     margin: auto;
     margin-top: 40px;
+
 }
 
-.rental-info-container {
+.HouseInfoPageRent {
     display: flex;
     justify-content: space-between;
     margin: 25px 0 10px;
@@ -14,70 +15,69 @@
         flex-direction: column;
         margin: 15px auto;
     }
-}
-
-.rental-info {
-    margin-top: 20px;
-    &__title {
-        margin: 0;
-        font-size: 36px;
-        @include smartphone-responsive {
-            font-size: 18px;
+    &__info {
+        margin-top: 20px;
+        &--title {
+            margin: 0;
+            font-size: 36px;
+            @include smartphone-responsive {
+                font-size: 18px;
+            }
         }
-    }
-    &__location {
-        font-size: 18px;
-        margin: 0;
-        color: black;
-        margin-bottom: 20px;
-        font-weight: 600;
-        @include smartphone-responsive {
-            font-size: 14px;
-        }
-    }
-}
-
-
-.renter-info {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    @include smartphone-responsive {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    &__identity {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 10px;
-        &__name {
-            width: 100px;
-            text-align: right;
+        &--location {
             font-size: 18px;
             margin: 0;
+            color: black;
+            margin-bottom: 20px;
+            font-weight: 600;
             @include smartphone-responsive {
-                font-size: 12px;
-            }
-        }
-        &__pic {
-            height: 64px;
-            width: 64px;
-            border-radius: 90px;
-            @include smartphone-responsive {
-                height: 32px;
-                width: 32px;
+                font-size: 14px;
             }
         }
     }
-}
 
-.rental-collapse-container {
-    display: flex;
-    justify-content: space-between;
-    @include smartphone-responsive {
+    &__renter {
+        display: flex;
         flex-direction: column;
+        gap: 15px;
+        @include smartphone-responsive {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &--identity {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            &--name {
+                width: 100px;
+                text-align: right;
+                font-size: 18px;
+                margin: 0;
+                @include smartphone-responsive {
+                    font-size: 12px;
+                }
+            }
+            &--pic {
+                height: 64px;
+                width: 64px;
+                border-radius: 90px;
+                @include smartphone-responsive {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
     }
+
+    &__collapse {
+        display: flex;
+        justify-content: space-between;
+        @include smartphone-responsive {
+            flex-direction: column;
+        }
+    }
+    
 }
