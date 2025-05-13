@@ -2,12 +2,6 @@
 
 .collapse {
     margin-bottom: 3%;
-    @include smartphone-responsive {
-       margin-bottom: 6%;
- }
-   &--small{
-    width: 45%;
-   }
     &__button {
         width: 100%;
         height: 50px;

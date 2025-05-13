@@ -8,8 +8,8 @@ $background-color : #F6F6F6;
 
 //Breakpoints for responsive
 $breakpoints: (
-    smartphone: 768px,
-    tablet: 1024px,
+    smartphone: 900px,
+    smallphone: 500px,
 );
 
 
@@ -19,9 +19,8 @@ $breakpoints: (
     }
 }
 
-
-@mixin tablet-responsive {
-    @media all and (min-width: map-get($breakpoints, smartphone)) and (max-width: map-get($breakpoints, tablet)) {
+@mixin smallphone-responsive {
+    @media all and (max-width: map-get($breakpoints, smallphone)) {
         @content;
     }
 }

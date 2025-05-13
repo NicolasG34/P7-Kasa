@@ -53,6 +53,11 @@
         }
 }
 
+.arrow{
+    @include smallphone-responsive {
+        width: 35px;
+    }
+}
 .arrow--backward{
     transform: rotate(180deg);
 }

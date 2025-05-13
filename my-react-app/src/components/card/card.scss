@@ -12,6 +12,9 @@
         width: 460px;
         height: 386px;
     }
+    @include smallphone-responsive {
+        width: 340px;
+    }
  
     &:hover {
         &::before{
@@ -43,9 +46,6 @@
         color: white;
         padding: 0 0px 15px 7px;
         font-size: 20px;
-    @include smartphone-responsive {
-       bottom:322px;
-    }
     }
     
 }

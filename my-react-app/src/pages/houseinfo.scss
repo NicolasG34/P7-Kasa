@@ -75,8 +75,9 @@
     &__collapse {
         display: flex;
         justify-content: space-between;
-        @include smartphone-responsive {
+        @include smallphone-responsive {
             flex-direction: column;
+            width: 220%;
         }
     }
     
