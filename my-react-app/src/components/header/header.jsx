@@ -23,7 +23,7 @@ function Header() {
 					className={({ isActive }) =>
 						isActive ? 'nav-active' : 'nav-link'
 					}
-					to="/aPropos"
+					to="/a-propos"
 				>
 					A Propos
 				</NavLink>

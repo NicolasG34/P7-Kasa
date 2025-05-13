@@ -15,7 +15,7 @@ function HouseInfo() {
     const rental = AppartmentData.find((i) => i.id === rentId)
 
     if (!rental) {
-        return <Navigate to="/adresse-introuvable" />
+        return <Navigate to="/404" />
     }
 
     return (

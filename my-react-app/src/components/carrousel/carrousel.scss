@@ -35,12 +35,11 @@
         height: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
             &__photocount {
                 position: absolute;
                 color: white;
                 font-size: 22px;
-                bottom: 16%;
+                bottom: 5%;
                 right: 50%;
                 margin: 0;
                 @include smartphone-responsive {

@@ -20,6 +20,7 @@
         &--title {
             margin: 0;
             font-size: 36px;
+            font-weight: 300;
             @include smartphone-responsive {
                 font-size: 18px;
             }
@@ -29,7 +30,6 @@
             margin: 0;
             color: black;
             margin-bottom: 20px;
-            font-weight: 600;
             @include smartphone-responsive {
                 font-size: 14px;
             }

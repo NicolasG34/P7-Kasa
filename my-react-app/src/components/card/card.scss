@@ -29,6 +29,7 @@
         z-index: 0;
         content:"";
         transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+        box-shadow: rgba(0, 0, 0, 1.35) 0px -50px 36px -28px inset;
     }
     &__img {
         width: 100%;
@@ -37,11 +38,11 @@
     }
     &__title{
         position: absolute;
-    bottom: 13px;
-    height: 30px;
-    color: white;
-    padding: 4%;
-    font-size: 23px;
+        bottom: -1px;
+        height: 30px;
+        color: white;
+        padding: 0 0px 15px 7px;
+        font-size: 20px;
     @include smartphone-responsive {
        bottom:322px;
     }

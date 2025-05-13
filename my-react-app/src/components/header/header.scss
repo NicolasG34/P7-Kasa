@@ -31,6 +31,10 @@
 	color: black;
 	font-weight: 500;
     font-size: 24px;
+    :hover{
+        color: black;
+        text-decoration: underline;
+    }
     @include smartphone-responsive {
        font-size: 23px;
        margin-left: 32px;
