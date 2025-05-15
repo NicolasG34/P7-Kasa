@@ -5,7 +5,7 @@
 
     &--small{
     width: 48%;
-    @include smartphone-responsive {
+    @include smallphone-responsive {
         width: 100%;
     }
     }
