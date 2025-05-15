@@ -5,6 +5,9 @@
 
     &--small{
     width: 48%;
+    @include smartphone-responsive {
+        width: 100%;
+    }
     }
 
     &__button {
