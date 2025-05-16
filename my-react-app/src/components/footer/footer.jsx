@@ -1,8 +1,6 @@
-//Import Images:
 import WhiteLogo from '../../assets/kasawhite.svg'
 import './footer.scss'
 
-//Component
 function Footer() {
   return (
     <footer className="footer">

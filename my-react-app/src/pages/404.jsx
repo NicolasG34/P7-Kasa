@@ -4,17 +4,16 @@ import Footer from "../components/footer/footer"
 
 function ErrorPage() {
 
-	document.title = '404 - Kasa'
 
 	return (
-        <div>
-        <Header />
-		<Error
-			title="404"
-			subtitle="Oups! La page que vous demandez n'existe pas."
-		/>
-        <Footer />
-        </div>
+		<div>
+			<Header />
+			<Error
+				title="404"
+				subtitle="Oups! La page que vous demandez n'existe pas."
+			/>
+			<Footer />
+		</div>
 	)
 }
 

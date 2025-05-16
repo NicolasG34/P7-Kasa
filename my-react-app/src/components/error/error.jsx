@@ -5,7 +5,6 @@ import './error.scss'
 function Error({
 	title = 'Erreur',
 	subtitle = 'Oops, une erreur est survenue.',
-	subtitle2 = '',
 }) {
 	return (
 		<section className="error">

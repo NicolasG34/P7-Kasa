@@ -1,5 +1,4 @@
-import { NavLink,Link } from "react-router";
-
+import { NavLink, Link } from "react-router";
 import logo from "../../assets/kasa.png"
 import "../header/header.scss"
 import '../../style/global.scss'

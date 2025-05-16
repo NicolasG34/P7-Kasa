@@ -6,16 +6,17 @@ import ErrorPage from './pages/404.jsx';
 import HomePage from './pages/home.jsx';
 import About from './pages/About.jsx';
 import HouseInfo from './pages/HouseInfo.jsx';
+document.title = ' Kasa'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/a-propos" element={<About />} />
-      <Route path="/logement/:rentId" element={<HouseInfo />} />
-      <Route path="*" element={<ErrorPage />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/a-propos" element={<About />} />
+        <Route path="/logement/:rentId" element={<HouseInfo />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
     </BrowserRouter>
 
   </StrictMode>,
